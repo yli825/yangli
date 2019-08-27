@@ -9,6 +9,7 @@ let bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({
     extended: false
 }))
+ 
 app.use(bodyParser.json())
 
 //Setup the static assets directories
@@ -41,7 +42,6 @@ app.post('/data', function (req, res) {
     res.render('addnew.html')
 })   
 console.log("try github")
-console.log("try github")
-console.log("try github")
+
 
 app.listen(8080);
