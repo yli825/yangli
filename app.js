@@ -40,5 +40,6 @@ app.post('/data', function (req, res) {
     db.push(req.body)
     res.render('addnew.html')
 })   
+console.log("try github")
 
 app.listen(8080);
