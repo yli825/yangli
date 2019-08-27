@@ -1,0 +1,49 @@
+<html>
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+        <link rel="stylesheet" href="style.css">
+    <h1> 
+        <a href="/" style="font-size: 66">Home</a>
+        <a href="/addnew" style="font-size: 66px">Add new task</a>
+    </h1>
+    <h2>
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td>Due date</td>
+                    <td>description</td>
+                    
+                </tr>
+                <% for ( var i =0; i< db.length;i++){ %>
+                    <tr>
+                        <td>
+                            <%= db[i].TaskName %>
+                        </td>
+                        <td>
+                            <%= db[i].TaskDue %>
+                        </td>
+                        <td>
+                            <%= db[i].TaskDesc %>
+                        </td>
+                        
+                    </tr>
+                    <% }%>
+
+
+
+    </h2>
+
+
+</body>
+</html>
+
+    
+
+
+
